@@ -1,0 +1,155 @@
+/* Reset e variáveis globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+/* Estilização geral */
+body {
+    background-image: url("assets/Trama-rosa-muro-astratto-_-Foto-Gratis.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Container principal */
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Título principal */
+h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h1 span {
+    color: #ff9800;
+}
+
+/* Texto abaixo do título */
+p {
+    margin: 10px 0 20px;
+    font-size: 1.6rem;
+}
+
+/* Estilização da área de vídeo */
+.video-container {
+    background-color: #000;
+    width: 100%;
+    max-width: 600px;
+    height: 315px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.video-unavailable {
+    color: #aaa;
+    text-align: center;
+}
+
+.video-unavailable p {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.video-unavailable a {
+    color: #999;
+    text-decoration: underline;
+}
+
+/* Botão CTA */
+.cta-button {
+    display: inline-block;
+    background-color: #ff9800;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e68900;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .video-container {
+        height: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    .video-container {
+        height: 250px;
+    }
+
+    .cta-button {
+        font-size: 1.6rem;
+        padding: 12px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .video-container {
+        height: 200px;
+    }
+
+    .cta-button {
+        font-size: 1.4rem;
+        padding: 10px 15px;
+    }
+}
