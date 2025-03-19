@@ -3,28 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página de Ansiedade</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Minha Página</title>
+    <link
+      rel="preload"
+      href="styles.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
   </head>
   <body>
     <div class="container">
       <h1>
-        VOCÊ ESTÁ TRATANDO A ANSIEDADE DA MANEIRA ERRADA <br />
-        <span>(E EU POSSO PROVAR ISSO!)</span>
+        Aprenda o meu segredo para ganhar mais do que muitos profissionais
+        formados, sem ter feito nenhuma faculdade.
       </h1>
-      <p>
-        Assista a este vídeo revelador e descubra o que ninguém quer que você
-        saiba.
-      </p>
+      <p>Eu peço que você não compartilhe esse meu segredo abaixo.</p>
 
       <div class="video-container">
-        <div class="video-unavailable">
-          <p>Vídeo indisponível</p>
-          <a href="#">Assistir no YouTube</a>
-        </div>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/AxRWo0zkI30"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
 
-      <a href="#" class="cta-button">EU QUERO CURAR A ANSIEDADE!</a>
+      <a
+        href="https://pay.kiwify.com.br/iguBc1G"
+        class="cta-button"
+        id="cta-button"
+        style="display: none"
+        target="_blank"
+        >EU QUERO ESSA OPORTUNIDADE!</a
+      >
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
